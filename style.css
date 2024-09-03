@@ -8,11 +8,40 @@ body {
   /* 100vh allows the background to occupy the whole page */
   background-color: green;
 }
+.header,
+footer {
+  height: 55px;
+  background-color: #1f2937;
+  color: white;
+}
 
 .header {
   display: flex;
   flex-direction: row;
 }
+.logo_container {
+  flex-basis: 50%;
+  color: #f9faf8;
+  font-size: 24px;
+  display: flex;
+  padding-left: 10%;
+  box-sizing: border-box;
+  /* Box sizing to avoid padding sizing issue */
+  align-items: center;
+}
+.links_container {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header a {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
 .main_content {
   background-color: orange;
   flex: 1;
@@ -20,14 +49,48 @@ body {
 
 .cont {
   height: 25%;
+  display: flex;
 }
+
 .cont_1 {
   background-color: #1f2937;
   color: white;
+  justify-content: space-around;
 }
+
+.cont1_text {
+  max-height: 250px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #e5e7eb;
+}
+
+.cont1_imagae_holder {
+  box-sizing: border-box;
+  margin-top: 20px;
+  max-height: 150px;
+  min-width: 380px;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: content;
+  align-items: center;
+ justify-content: center;
+}
+
+.cont1_text button {
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
 .cont_2 {
   background-color: white;
 }
+
 .cont_3 {
   background-color: #e5e7eb;
 }
@@ -35,15 +98,9 @@ body {
 .cont_4 {
   background-color: white;
 }
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header,
-footer {
-  height: 80px;
-  background-color: #1f2937;
-  color: white;
 }
