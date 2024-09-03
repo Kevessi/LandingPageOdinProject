@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  /* 100vh allows the background to occupy the whole page */
+  background-color: green;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.main_content {
+  background-color: orange;
+  flex: 1;
+}
+
+.cont {
+  height: 25%;
+}
+.cont_1 {
+  background-color: #1f2937;
+  color: white;
+}
+.cont_2 {
+  background-color: white;
+}
+.cont_3 {
+  background-color: #e5e7eb;
+}
+
+.cont_4 {
+  background-color: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header,
+footer {
+  height: 80px;
+  background-color: #1f2937;
+  color: white;
+}
