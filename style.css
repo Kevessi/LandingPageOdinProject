@@ -43,16 +43,26 @@ footer {
 }
 
 .main_content {
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
-.cont {
-  height: 25%;
-  display: flex;
+/* Usse flex for sizing more often than height */
+.cont_1,
+.cont_3,
+.cont_4 {
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.cont_2 {
+  flex: 2;
+  flex-shrink: 0;
 }
 
 .cont_1 {
+  display: flex;
   background-color: #1f2937;
   color: white;
   justify-content: space-around;
@@ -76,7 +86,7 @@ footer {
   display: flex;
   justify-content: content;
   align-items: center;
- justify-content: center;
+  justify-content: center;
 }
 
 .cont1_text button {
@@ -89,8 +99,40 @@ footer {
 
 .cont_2 {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont_2 h4 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  margin: 0;
+}
+.cont_2_flex_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
+.cont_2_box {
+  height: 180px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration {
+  border: 2px solid blue;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+}
 .cont_3 {
   background-color: #e5e7eb;
 }
